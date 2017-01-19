@@ -153,31 +153,25 @@ class Timezone {
 	public function selectForm($selected = null, $placeholder = null, array $selectAttributes = [], array $optionAttributes = [] )
 	{
 		$selectAttributesString = '';
-		foreach ($selectAttributes as $key => $value)
-		{
+		foreach ($selectAttributes as $key => $value) {
 			$selectAttributesString = $selectAttributesString . " " . $key . "='" . $value ."'";
 		}
 
 		$optionAttributesString = '';
-		foreach ($optionAttributes as $key => $value)
-		{
+		foreach ($optionAttributes as $key => $value) {
 			$optionAttributesString = $optionAttributesString . " " . $key . "='" . $value ."'";
 		}
 
 		$string = "<select". $selectAttributesString .">\n";
 
-		if (isset($placeholder) && (empty($selected)))
-		{
+		if (isset($placeholder) && (empty($selected))) {
 		     $placeholder = "<option value='' disabled selected>{$placeholder}</option>";
-		}
-		else
-		{
+		} else {
 		      $placeholder = null;
 		}
 
 		$string = $string . $placeholder;
-		foreach ($this->timezoneList as $key => $value)
-		{
+		foreach ($this->timezoneList as $key => $value) {
 			if ($selected == $value) {
 				$selectedString = "selected='" . $value . "'";
 			} else {
