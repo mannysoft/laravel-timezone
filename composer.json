@@ -1,6 +1,6 @@
 {
     "name": "mannysoft/timezone",
-    "description": "Helps manage timezones in Laravel. Includes",
+    "description": "Timezones in Laravel",
     "homepage": "http://www.mannyisles.com/timezones-in-laravel/",
     "keybords": ["timezone", "timezones"],
     "license": "MIT",
