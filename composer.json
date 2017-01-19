@@ -15,9 +15,6 @@
         "illuminate/support": ">=5.3"
     },
     "autoload": {
-        "classmap": [
-            "src/migrations"
-        ],
         "psr-0": {
             "Mannysoft\\Timezone\\": "src/"
         }
