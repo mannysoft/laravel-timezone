@@ -1,0 +1,26 @@
+{
+    "name": "mannysoft/timezone",
+    "description": "Helps manage timezones in Laravel. Includes",
+    "homepage": "http://www.mannyisles.com/timezones-in-laravel/",
+    "keybords": ["timezone", "timezones"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manny Isles",
+            "email": "manny.isles@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "illuminate/support": ">=5.3"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Mannysoft\\Timezone\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
