@@ -19,7 +19,7 @@ class TimezoneServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		AliasLoader::getInstance()->alias('Timezone', 'Camroncade\Timezone\Facades\Timezone');
+		AliasLoader::getInstance()->alias('Timezone', 'Mannysoft\Timezone\Facades\Timezone');
 	}
 
 	/**
@@ -29,7 +29,7 @@ class TimezoneServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$this->app->bind('timezone', 'Camroncade\Timezone\Timezone');
+		$this->app->bind('timezone', 'Mannysoft\Timezone\Timezone');
 	}
 
 	/**
